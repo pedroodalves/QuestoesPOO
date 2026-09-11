@@ -6,9 +6,9 @@ Utilizando o System.out.printf, é possível formatar os dados de maneira semelh
 Por exemplo, no código abaixo:
 
 public static void lerEEscrever(int idade) {
-Scanner scanner = new Scanner(System.in);
-System.out.println("Informe o seu nome:");
-String nome = scanner.nextLine();
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Informe o seu nome:");
+    String nome = scanner.nextLine();
 
     System.out.printf("Seu nome é %s e sua idade é %d.", nome, idade);
 }
@@ -25,19 +25,21 @@ Questão 6:
 import java.util.Scanner;
 
 public class Contador {
-public static void main(String args) {
-Scanner sc = new Scanner(System.in);
-int contador = 0;
-while (contador <= 5) {
-System.out.println("Contador: " + contador)
-}
-}
+    public static void main(String args) {
+        Scanner sc = new Scanner(System.in);
+        int contador = 0;
+        while (contador <= 5) {
+            System.out.println("Contador: " + contador)
+        }
+    }
 }
 
 O código acima possui diversos erros. Dentre eles, podemos listar:
 
 -O método main() recebe como parâmetro "String args". Contudo, a sintaxe está incorreta, uma vez que não foram inseridos colchetes. A forma correta seria public void main(String[] args) ou public void main(String args[]);
+
 -Embora seja criado um contador, ele não chega a ser incrementado, apesar de ser inicializado. Dessa forma, o while nunca alcançará a condição de parada, se transformando em um laço infinito. Pode-se corrigir esse erro ao incluir uma soma dentro do while("contador++", "contador += 1" ou "contador = contador + 1") para garantir que a variável seja incrementada corretamente.
+
 -Falta um ponto e vírgula após a linha "System.out.println("Contador: " + contador)". A ausência desse caractere impedirá o compilador de executar corretamente o código, visto que a linguagem Java exige a inserção do ponto e vírgula ao final de cada linha.
 
 O código corrigido ficaria da seguinte forma:
@@ -45,12 +47,15 @@ O código corrigido ficaria da seguinte forma:
 import java.util.Scanner;
 
 public class Contador {
-public static void main(String[] args) {
-Scanner sc = new Scanner(System.in);
-int contador = 0;
-while (contador <= 5) {
-System.out.println("Contador: " + contador);
-contador++;
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int contador = 0;
+        while (contador <= 5) {
+            System.out.println("Contador: " + contador);
+            contador++;
+        }
+    }
+}
 }
 }
 }
