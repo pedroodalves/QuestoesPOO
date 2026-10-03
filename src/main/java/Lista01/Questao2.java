@@ -1,4 +1,4 @@
-package org.example;
+package Lista01;
 
 /*Peça um número ao usuário. Verifique e imprima:
 "Múltiplo de 3", se for múltiplo de 3;

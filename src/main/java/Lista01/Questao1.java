@@ -1,4 +1,4 @@
-package org.example;
+package Lista01;
 import java.util.Scanner;
 
 /*Escreva um programa que leia o nome de um aluno e suas três notas, sendo a terceira nota com peso 2.

@@ -1,4 +1,4 @@
-package org.example;
+package Lista01;
 
 /*Peça ao usuário um número inteiro positivo N. Em seguida, imprima todos os números primos entre 2 e N.*/
 

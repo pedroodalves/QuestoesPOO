@@ -1,4 +1,4 @@
-package org.example;
+package Lista01;
 import java.util.Scanner;
 
 /*Uma aplicação interessante dos computadores é exibir diagramas e gráficos de barras.
